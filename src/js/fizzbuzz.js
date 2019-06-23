@@ -4,7 +4,9 @@ if (typeof module !== 'undefined' && module.exports) {
 
 function FizzBuzz() {
     this.check = (number) => {
-        if (number % 15 === 0) {
+        if (number <= 0) {
+            return 'Invalid number';
+        } else if (number % 5 === 0 && number % 3 === 0) {
             return 'FizzBuzz';
         } else if (number % 5 === 0) {
             return 'Buzz';
