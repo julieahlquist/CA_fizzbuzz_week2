@@ -9,34 +9,33 @@
     <title>FizzBuzz</title>
 </head>
 
-<body style="background-color:powderblue;">
+<body style="background-image: linear-gradient(to bottom right, powderblue, white);">
     <br>
     <br>
     <div class="ui olive raised very padded text container segment">
         <h1 class="ui header">
-            <img src="/images/icons/plugin.png">
             <div class="content">
-            <font color="powderblue">FizzBuzz</font>
+            <font color="powderblue" face="courier" size="15">FizzBuzz</font>
             <div class="sub header">
-            <font color="silver">Game rules:</font>
-            <br>
-            <font color="silver">if number is divisible by 3 return 'fizz'</font>
-            <br>
-            <font color="silver">if number is divisible by 5 return 'buzz'</font>
-            <br>
-            <font color="silver">if number is divisible by both 3 and 5 return 'fizzbuzz'</font>
+                <br>
+                <font color="silver"><i class="heart outline icon"></i>Game rules:</font>
+                <br>
+                <font color="silver"><i class="angle right icon"></i>if number is divisible by 3 return 'Fizz'</font>
+                <br>
+                <font color="silver"><i class="angle right icon"></i>if number is divisible by 5 return 'Buzz'</font>
+                <br>
+                <font color="silver"><i class="angle right icon"></i>if number is divisible by both 3 and 5 return 'FizzBuzz'</font>
         </div>
         </h1>
     </div>
     <br>
-    <div class="ui olive fluid action input raised very padded text container segment">
-        <input type="text" id="value" placeholder="Pick a number">
-        <button class="ui olive button" input type="submit" value="Check" id="button">Check</button>
+    <div class="ui fluid olive input raised very padded text container segment">
+        <input type="text" id="value" placeholder="Pick a number...">
+        <input type="submit" button class="ui olive button" value="Fizz, Buzz or FizzBuzz?" id="button"></button>
     </div>
     <br>
-    <div class="ui olive fluid action input raised very padded text container segment" id="display_answer">
+    <div id='display_answer' class="ui olive raised very padded text container segment">
     </div>
-
 </body>
 
 <script src="js/fizzbuzz.js"></script>

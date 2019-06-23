@@ -1,9 +1,5 @@
 require('../spec/spec.helper');
 
-const { fizzBuzz } = require('../spec/spec.helper')
-const BrowserHelpers = require('e2e_training_wheels')
-const browser = new BrowserHelpers()
-
 describe('User can input a value and get FizzBuzz results', () => {
   // Initialize a browser and visit the server's root path
   before(async () => {

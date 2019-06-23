@@ -1,58 +1,41 @@
-Question 1. Please explain what the following lines of code do
-
-global.browser = new BrowserHelpers()
-global.expect = chai.expect;
+# FizzBuzz challenge - JavaScript
+### Craft Academy - June 2019 - Week 2
 
 
-Question 2. Please explain why we are placing the let fizzBuzz = new FizzBuzz outside the it block?
+___
+Question 1.
 
+--> The lines above are requiring BrowseHelpers from e2_training_wheels and chai from modules. Global means we initialize these on a global scope. BrowseHelpers let us run the code in the browser and chai is a library tool for BDD.
+____
+Question 2.
 
-Question 3. Please explain the difference between using === and == in JS?
+--> We wish to require fizzBuzz on all it blocks, so rather than typing it multiple times we do it outside.
+____
+Question 3.
 
+--> === is testing for strict values, meaning they have to be exactly the same, while == is more 'accepting' as for instance the number 10 can be equal to '10' (10 == '10')
+____
+Question 4. 
 
-Question 4. Why we are moving (number % 5 === 0) to the top?
-
-
-Question 5. Please explain the difference between feature and unit test
+--> I dont think it matters that much if % 5 or % 3 is at the top, but when we add the code for % 15 that has to be put at the top in order to be executed first.
+____
+Question 5. 
 
 --> With unit tests we are testing the logic behind the application to see it behaves as it supposed to do. Each function should be isolated and tested individually to return results fast.
 --> With feature tests we are interacting eith the application in the same way as a real user would do. These tests take longer time than unit tests.
+____
+Question 6. 
 
+--> This piece of code opens the browser at the local host page, checks each input value and its results and then closes the browser.
+___
+Question 7. 
 
-Question 6. Please explain what this following code does
+--> What we test is our expectations on how we want and suppose our code will behave.
+___
+Question 8. 
 
-describe('User can input a value and get FizzBuzz results', () => {
-    before(async () => {
-        await  browser.init()
-        await  browser.visitPage('http://localhost:8080/')
-    });
+--> The first line of code calls the JS file, the second one second one sets an event listener which "simulates" how our application would behave if a user would interact with it. Then we get the value by its id and then display the result of that value by using our index.html file. 
+___
 
-    beforeEach(async () => {
-        await  browser.page.reload();
-    })
-
-    after(async ()=> {
-        await  browser.close();
-    })
-})
-
-Question 7. Please explain what expectations in the context of testing are
-
-
-Question 8. Please write a line to line explanation of what is happening in this code
-
-<script src="js/fizzbuzz.js"></script><script>
-        document.addEventListener('DOMContentLoaded', () => {
-            let button = document.getElementById('button')
-            let displayDiv = document.getElementById('display_answer')
-            button.addEventListener('click', () =>{
-                let value = document.getElementById('value').value
-                let fizzBuzz = new FizzBuzz
-                let result = fizzBuzz.check(value)
-                displayDiv.innerHTML = result;
-            })
-        })
-</script>
-
-Question 9. Please explain what a CDN (Content Delivery Network) is? 
---> CDNs allows quick distribution of internet content.
+Question 9. 
+--> Content Delivery networks are geographically separated servers that allows quick distribution of internet content through html files.
