@@ -1,7 +1,25 @@
 # FizzBuzz challenge - JavaScript
 ### Craft Academy - June 2019 - Week 2
 
-* [Check it out here](https://focused-easley-c2fd5b.netlify.com/)
+--> [Check it out here](https://focused-easley-c2fd5b.netlify.com/) <--
+
+## 1. Description
+This is an individual weekend challenge of week 2 at Craft Academy, aiming to solve the FizzBuzz Challenge using JavaScripta and deploying it on a styled webpage. In addition several questions regarding the projects has been answered below.
+
+## 2. Prerequisites
+- Initialize npm
+- Install Training Wheels [package](https://www.npmjs.com/package/e2e_training_wheels)
+
+## 3. Testing
+Both unit and feature tests has continously been carried out thoughout the project using npm spec/feature tests. 
+
+## 4. Authors
+* **Ahlquist, Julie** - [julieahlquist](https://github.com/julieahlquist)
+
+## 5. Acknowledgments
+Thank you to Craft Academy in Stockholm, Sweden for crafting this challenge.
+
+Thanks to PurpleBooth for the README template https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 ___
 Question 1.
 
@@ -38,4 +56,6 @@ Question 8.
 ___
 
 Question 9. 
+
 --> Content Delivery networks are geographically separated servers that allows quick distribution of internet content through html files.
+___
