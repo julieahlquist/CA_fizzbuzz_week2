@@ -1,7 +1,7 @@
 # FizzBuzz challenge - JavaScript
 ### Craft Academy - June 2019 - Week 2
 
-
+* [Check it out here](https://focused-easley-c2fd5b.netlify.com/)
 ___
 Question 1.
 
