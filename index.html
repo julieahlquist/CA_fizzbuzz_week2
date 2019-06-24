@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <title>FizzBuzz</title>
+</head>
+
+<body style="background-image: linear-gradient(to bottom right, powderblue, white);">
+    <br>
+    <br>
+    <div class="ui olive raised very padded text container segment">
+        <h1 class="ui header">
+            <div class="content">
+            <font color="powderblue" face="courier" size="15">FizzBuzz</font>
+            <div class="sub header">
+                <br>
+                <font color="silver"><i class="heart outline icon"></i>Game rules:</font>
+                <br>
+                <font color="silver"><i class="angle right icon"></i>if number is divisible by 3 return 'Fizz'</font>
+                <br>
+                <font color="silver"><i class="angle right icon"></i>if number is divisible by 5 return 'Buzz'</font>
+                <br>
+                <font color="silver"><i class="angle right icon"></i>if number is divisible by both 3 and 5 return 'FizzBuzz'</font>
+        </div>
+        </h1>
+    </div>
+    <br>
+    <div class="ui fluid olive input raised very padded text container segment">
+        <input type="text" id="value" placeholder="Pick a number...">
+        <input type="submit" button class="ui olive button" value="Fizz, Buzz or FizzBuzz?" id="button"></button>
+    </div>
+    <br>
+    <div id='display_answer' class="ui olive raised very padded text container segment">
+    </div>
+</body>
+
+<script src="src/js/fizzbuzz.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let button = document.getElementById('button')
+            let displayDiv = document.getElementById('display_answer')
+            button.addEventListener('click', () =>{
+                let value = document.getElementById('value').value
+                let fizzBuzz = new FizzBuzz
+                let result = fizzBuzz.check(value)
+                displayDiv.innerHTML = result;
+            })
+        })
+    </script>
+</html>
